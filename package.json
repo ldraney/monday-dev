@@ -9,7 +9,15 @@
     "archive-empty": "node scripts/archive-empty.js",
     "create-paul-board": "node scripts/create-paul-board.js",
     "create-lucas-board": "node scripts/create-lucas-board.js",
-    "fix-lucas-board": "node scripts/fix-lucas-board.js"
+    "fix-lucas-board": "node scripts/fix-lucas-board.js",
+    "map-schema": "node scripts/map-board-schema.js",
+    "validate-schema": "node scripts/validate-schema-mapping.js",
+    "cache-items": "node scripts/cache-items.js",
+    "dashboard": "node scripts/purchasing-dashboard.js",
+    "dashboard-cached": "node scripts/dashboard-cached.js",
+    "ai-handoff": "node scripts/ai-handoff.js",
+    "trace-evre-moo": "node scripts/trace-evre-moo.js",
+    "trace-brickell": "node scripts/trace-brickell-emulsifying-wax.js"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
