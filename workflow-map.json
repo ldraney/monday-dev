@@ -1,0 +1,91 @@
+{
+  "company": "Pure Earth Labs",
+  "role": "Dev Manager / Purchasing Coordinator",
+  "priority_focus": [
+    "Purchasing flow (always behind)",
+    "Sprint organization", 
+    "Shopify catalog management",
+    "Team dashboard/SOP creation"
+  ],
+  
+  "core_boards": {
+    "9161287533": {
+      "name": "Accounts (CRM)",
+      "workspace": "CRM",
+      "purpose": "Foundation - everything starts here",
+      "your_role": "Track dev accounts, ensure purchasing flows",
+      "key_columns": ["Owner", "Client Type", "Prod Deals", "Dev Deals"],
+      "priority_accounts": [
+        "Moo Elixir & Co",
+        "Evre Selfcare Limited", 
+        "Brickell Mens Products",
+        "Captain Blankenship",
+        "Beauty Heroes",
+        "Primally Pure",
+        "Shopify - Earth Harbor",
+        "Shopify - Pure Earth Labs"
+      ]
+    },
+    
+    "9384243852": {
+      "name": "Prod Deals (CRM)", 
+      "workspace": "CRM",
+      "purpose": "Production contracts and deals",
+      "your_role": "Ensure deals flow to production",
+      "connects_to": ["9161287533", "9304930311"]
+    },
+    
+    "9304930311": {
+      "name": "Production",
+      "workspace": "Production 2025", 
+      "purpose": "Manufacturing execution",
+      "your_role": "Track what needs ingredients/purchasing",
+      "connects_to": ["9384243852", "8768285252"]
+    },
+    
+    "8768285252": {
+      "name": "Bulk Batch Traceability (Lab)",
+      "workspace": "Lab",
+      "purpose": "Batch tracking and quality",
+      "your_role": "Monitor for purchasing needs",
+      "connects_to": ["9304930311", "9387127195"]
+    },
+    
+    "9387127195": {
+      "name": "EPOs - Ingredients (VRM - Purchasing)",
+      "workspace": "VRM - Purchasing", 
+      "purpose": "THE BOTTLENECK - ingredient purchasing",
+      "your_role": "Keep this moving, prevent backups",
+      "critical_statuses": ["pending", "waiting", "stuck"],
+      "connects_to": ["8768285252"]
+    }
+  },
+  
+  "purchasing_flow": {
+    "description": "Account → Prod Deal → Production → Batch → EPO (purchasing)",
+    "bottlenecks": [
+      "EPOs get stuck in pending status",
+      "Missing links between boards", 
+      "Manual status updates"
+    ],
+    "your_fixes": [
+      "Set up purchasing dashboard",
+      "Created automated flow tracking"
+    ]
+  },
+  
+  "ai_context": {
+    "personality": "Move fast, automate repetitive work, build systems",
+    "communication_style": "Direct, action-oriented, technical",
+    "current_projects": [
+      "monday-dev toolkit (automate Monday.com workflows)",
+      "Personal task/ticket tracking system", 
+      "Team dashboard rollout"
+    ],
+    "pain_points": [
+      "Purchasing always behind",
+      "Too much clicking through Monday.com",
+      "Team needs better visibility into flows"
+    ]
+  }
+}
