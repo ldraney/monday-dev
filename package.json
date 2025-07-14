@@ -1,0 +1,21 @@
+{
+  "name": "monday-dev",
+  "version": "1.0.0",
+  "description": "Developer toolkit for Monday.com workflows",
+  "type": "module",
+  "scripts": {
+    "get-boards": "node scripts/get-boards.js",
+    "find": "node scripts/find.js",
+    "archive-empty": "node scripts/archive-empty.js",
+    "create-paul-board": "node scripts/create-paul-board.js",
+    "create-lucas-board": "node scripts/create-lucas-board.js",
+    "fix-lucas-board": "node scripts/fix-lucas-board.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "postgres": "^3.4.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
